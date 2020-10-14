@@ -1,0 +1,209 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'nunito',sans-serif;
+}
+header{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: hsl(180, 29%, 50%) url('images/bg-header-desktop.svg');
+}
+header h1{
+    color:white;
+    text-transform: uppercase;
+}
+header .filter{
+    border-radius: 5px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    background-color: white;
+    transform: translateY(50%);
+    box-shadow: 0px 5px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+}
+header .filter .input{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+header .filter .input input{
+    height: 100%;
+    width: auto;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border:none;
+    outline: none;
+    padding:0px 10px;
+}
+header .filter .input input::placeholder{
+    color:rgba(0,0,0,0.4);
+    letter-spacing:1px
+}
+header .filter .input .tag{
+    width: auto;
+    height: 60%;
+    background: hsl(180, 31%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right:10px;
+}
+header .filter .input .tag #text{
+    font-size:13px;
+    padding:0px 10px;
+    color:hsl(180, 29%, 50%);
+}
+header .filter .input .tag #remove{
+    width: 30px;
+    height: 100%;
+    background: hsl(180, 29%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    transition: 0.3s all;
+}
+header .filter .input .tag #remove:hover{
+    background: hsl(180, 14%, 20%);
+}
+header .filter #clear{
+    color:hsl(180, 29%, 50%);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+header .select{
+    width:70%;
+    height: auto;
+    position: absolute;
+    bottom:-40px;
+    transform: translateY(100%);
+    background: white;
+    box-shadow: 0px 5px 16px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+header .select .option{
+    width:100%;
+    padding:20px;
+    transition: 0.3s all;
+}
+header .select .null{
+    width:100%;
+    padding:20px;
+    color:grey;
+    text-align: center;
+}
+header .select .option:hover{
+    background-color: hsl(180, 31%, 95%);
+}
+
+
+section{
+    background-color: hsl(180, 52%, 96%);
+    width: 100vw;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+section .jobs{
+    height: auto;
+    width: 70%; 
+    padding-top: 50px;
+}
+section .jobs .job{
+    background-color: white;
+    padding:20px;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+section .jobs .job:hover{
+    transform: scale(1.1,1.1);
+}
+section .jobs .job .left{
+    display: flex;
+    align-items: center;
+}
+section .jobs .job .left .avator{
+    width:100px;
+    height: 100px;
+    background-color: hsl(180, 31%, 95%);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+section .jobs .job .left .jobinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+section .jobs .job .left .jobinfo .company{
+    display: flex;
+}
+section .jobs .job .left .jobinfo .company span{
+    color: hsl(180, 29%, 50%);
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding:2px 0px;
+}
+section .jobs .job .left .jobinfo .name{
+    color:hsl(180, 29%, 50%);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding:2px 0px;
+}
+section .jobs .job .left .jobinfo .additional{
+    display: flex;
+}
+section .jobs .job .left .jobinfo .additional span{
+    color:grey;
+    font-size: 11px;
+    margin-right: 10px;
+    padding:2px 0px;
+}
+section .jobs .job .left .jobinfo .company .new{
+    padding:2px 10px;
+    font-size: 10px;
+    background-color: hsl(180, 29%, 50%);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin:0px 5px;
+}
+
+
+section .jobs .job .right span{
+    color:hsl(180, 29%, 50%);
+    background-color:  hsl(180, 31%, 95%);
+    padding:5px 7px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
